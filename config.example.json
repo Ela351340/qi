@@ -1,0 +1,56 @@
+{
+  "_说明": "复制为 config.json 后填写。config.json 已被 .gitignore 排除，不会进仓库。",
+  "_架构": "providers 是列表，activeProviderId 指向当前使用的那一个。切换模型只改这一项，代码不用动。",
+  "activeProviderId": "ollama-local",
+  "providers": [
+    {
+      "id": "ollama-local",
+      "name": "本地 Ollama（本机）",
+      "baseUrl": "http://127.0.0.1:11434/v1",
+      "apiKey": "",
+      "model": "qwen3:8b"
+    },
+    {
+      "id": "ollama-lan",
+      "name": "本地 Ollama（局域网）",
+      "baseUrl": "http://192.168.1.10:11434/v1",
+      "apiKey": "",
+      "model": "qwen3:8b"
+    },
+    {
+      "id": "dashscope",
+      "name": "阿里云 DashScope",
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "apiKey": "sk-在这里填",
+      "model": "qwen3.6-plus"
+    }
+  ],
+  "persona": {
+    "displayName": "云若",
+    "avatarPath": "",
+    "systemPrompt": "人设正文，800-1500 字，写成可执行的事实而不是形容词。"
+  },
+  "user": {
+    "displayName": "我",
+    "avatarPath": ""
+  },
+  "theme": {
+    "bubbleSelf": "#2C2C2E",
+    "bubbleOther": "#2C2C2E",
+    "separateBubbleColors": false
+  },
+  "sticker": {
+    "enabled": true,
+    "probability": 35,
+    "_probability说明": "约等于每 N 次回复带一张表情包，数字越小发得越频繁",
+    "packsDir": "assets/stickers_user"
+  },
+  "notify": {
+    "enabled": true,
+    "quietHours": {
+      "enabled": false,
+      "start": "23:00",
+      "end": "08:00"
+    }
+  }
+}

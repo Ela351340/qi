@@ -1,0 +1,26 @@
+# ---- Flutter / Dart ----
+.dart_tool/
+.packages
+/build/
+*.iml
+.idea/
+.vscode/
+*.log
+
+# ---- 密钥与签名（绝对不进仓库）----
+config.json
+*.jks
+*.keystore
+key.properties
+local.properties
+
+# ---- 表情包（用户自己的素材，不入库）----
+assets/stickers_user/
+
+# ---- 系统 ----
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Flutter 自动生成的文件
+.flutter-plugins-dependencies
