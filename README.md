@@ -120,6 +120,10 @@ assets/stickers/user/pack.json   # 你自己挑的表情
 
 ---
 
+## 交接
+
+接手的同学请先读 [HANDOVER.md](HANDOVER.md)：代码地图、构建环境、设计决策、发布流程、已知限制都在里面。
+
 ## 贡献
 
 见 [CONTRIBUTING.md](CONTRIBUTING.md)。欢迎提 issue，尤其是：
